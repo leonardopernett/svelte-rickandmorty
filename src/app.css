@@ -1,0 +1,52 @@
+body {
+  background-color: #202020;
+  color: #fff;
+}
+
+.title {
+  font-size: 2.7rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width:500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  } 
+}
+
+.character {
+  background-color: #101010;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.btns button {
+  padding: 5px 10px;
+  background-color: wheat;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border:1px solid #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.character img {
+  overflow: hidden;
+}
